@@ -41,6 +41,7 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  word-break: break-all;
 }
 
 a:visited {
@@ -59,6 +60,7 @@ a:visited {
   width: auto;
   min-width: 5vw;
   max-width: 30vw;
+  word-break: break-all;
 }
 
 .stay {
