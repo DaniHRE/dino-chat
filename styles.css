@@ -43,6 +43,14 @@ span {
   max-width: 30vw;
 }
 
+#boxMe a {
+  margin-left: 0.5rem;
+}
+
+a:visited {
+  color: white;
+}
+
 .sended {
   align-items: flex-end;
   justify-content: flex-end;
