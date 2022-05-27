@@ -77,7 +77,7 @@ var input = document.getElementById("msg");
             console.log(arrMsg)
             arrMsg.forEach((msg) => {
                 msg.addEventListener("click", () => {
-                    deleteMsg(msg.value)
+                    deleteMsg(msg.id)
                 })
             })
             ajustarScroll();
@@ -92,5 +92,5 @@ var input = document.getElementById("msg");
         function deleteMsg(key) {
             var id = key;
             console.log(id)
-            remove(ref(db), '/exemplo/' + id);
+            remove(ref(db, 'exemplo/' + id));
         }

@@ -1,5 +1,5 @@
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,27 +24,23 @@ span {
   max-height: 80vh;
   overflow-x: hidden;
   overflow-y: auto;
-  max-width:60vw;
+  max-width: 60vw;
   width: 60vw;
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 480px){
-  #conteudo{
-    max-width: inherit;
-    width: 90vw;
-  }
-}
-
 #boxMe {
   margin-left: auto;
-  max-width: 300px;
-  min-width: 5vw;
-  max-width: 30vw;
 }
 
 #boxMe a {
   margin-left: 0.5rem;
+}
+
+#boxMe b {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 a:visited {
@@ -88,13 +84,12 @@ a:visited {
 
 #conteudo::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background-image: linear-gradient(180deg, #BFD834 0%, #00AEAD 99%);
+  background-image: linear-gradient(180deg, #bfd834 0%, #00aead 99%);
   box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
 }
 
 .msg {
   border-bottom: 1px solid #f3f3f3;
-  padding: 6px 0;
 }
 
 .chat {
@@ -107,7 +102,6 @@ a:visited {
   margin: 7px 10px;
   -webkit-box-align: baseline;
   flex: 1;
-  margin-left: 10px;
 }
 
 .outros {
@@ -129,10 +123,27 @@ a:visited {
 }
 
 .self {
-  background: #BFD834;
+  background: #bfd834;
   color: #fff;
 }
- .other {
-  background: #00AEAD;
+.other {
+  background: #00aead;
   color: #fff;
- }
+}
+
+@media screen and (max-width: 480px) {
+  #conteudo {
+    max-width: inherit;
+    width: 90vw;
+  }
+  #boxMe {
+    max-width: 100%;
+  }
+  .conteudo {
+    width: 95%;
+  }
+  #boxSended {
+    min-width: 80.5vw;
+    margin-left: auto;
+  }
+}
